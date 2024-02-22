@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    /* left: 0;
+    top: 0px; */
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 5px;
+    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100px;
+    padding: 20px;
+    
+}
+
+.sidebar  a:hover{
+    background-color: #e8e5e5;
+}
+
+.sidebar .active{
+    background-color: #cecdcd;
+}
+
+.sidebar img{
+    margin-bottom: -5px;
+    /* margin-left: 20px; */
+}
+
+
+.sidebar a {
+    line-height: 32px;
+    text-decoration: none;
+    color: #000;
+    height: 50px;
+    padding: 10px;
+
+}
+.toggle {
+    bottom: 12px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.youtubelogo {
+    display: flex;
+    flex: 0 0 300px;
+    /* background: blue; */
+    gap: 20px;
+    align-items: center;
+}
+
+.naija{
+    position: relative;
+    bottom: 8px;
+    right: 19px;
+
+}
+
+/* .searchbutton{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+} */
+
+.searchbarcontainer {
+    display: flex;
+    flex: 1 1 auto;
+    /* background: green; */
+    /* width: 100%; */
+}
+
+/* .search {
+    background-color: rgb(206, 206, 206);
+    border-radius: 0px 20px 20px 0px;
+    width: 30px;
+    
+}
+ */
+.searchbar {
+    width: 60%;
+    /* background: red; */
+    /* margin: auto; */
+    /* border: 1px solid blue; */
+    border: 1px solid rgb(186, 183, 183);
+    display: flex;
+    align-items: center;
+    transform: translateX(-30px);
+    border-radius: 500px;
+    overflow: hidden;
+
+    
+
+}
+
+.search1 {
+    width: 80%;
+    height: 100%;
+    padding: 7px;
+    outline: none;
+    border: none;
+    
+}
+
+.submitbtn {
+    width: 20%;
+    height: 100%;
+    /* display: inline-block; */
+    padding: 5px;
+    /* background: goldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.signintop {
+    position: relative;
+    bottom: 10px;
+    color: rgb(1, 107, 255);
+}
+
+.signingone{
+    width: 30px;
+    margin-top: 5px;
+    
+}
+.microphone {
+    background-color: rgb(243, 243, 243);
+    border-radius: 50px;
+}
+
+.signinbuttom{
+    position: relative;
+    bottom: 25px;
+    left: 30px;
+    margin-top: 2px;
+    color: rgb(1, 107, 255);;
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+
+}
+
+.button {
+    position: fixed;
+    left: 250px;
+    overflow-x: auto;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: #fff;
+    padding: 5px;
+    margin: 15px;
+    height: 60px;
+    
+}
+
+.button button {
+    /* width: 50px; */
+    height: 25px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px;
+    background: rgb(243, 243, 243);
+}
+
+.button .active {
+    background: #000;
+    color: #fff;
+}
+
+.leftpicture img{
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+}
+.rightpicture .showmaxad{
+    width: 440px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.rightpicture button, .watch{
+    position: relative;
+    bottom: 60px;
+    left: 80px;
+    line-height: 20px;
+}
+
+.main {
+    display: flex;
+    margin-left: 250px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 10px;
+    
+}
+
+.toptwo {
+    display: flex;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+.bottomthree {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 10px;
+    width: 100%;
+    /* margin-left: 450px;
+    margin-top: 30px; */
+}
+
+.bottomthree .img1, .img2, .img3 {
+    min-height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 550;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+}
+
+.vidInfo{
+    margin-left: 50px;
+    color: #8b8888;
+    font-size: 11px;
+}
+
+.bottom1 {
+    
+}
+.bottom2 {
+
+}
+.bottom3 {
+    
+}
+
+.channel{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+
+
+.showmax {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.btn {
+    color: white;
+    background: rgb(0, 115, 255);
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+}
