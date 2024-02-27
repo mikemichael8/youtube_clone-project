@@ -5,11 +5,10 @@
 }
 
 .navbar {
-    /* position: relative; */
     display: flex;
     align-items: center;
-    /* left: 0;
-    top: 0px; */
+    position: fixed;
+    top: 0px;
     width: 100%;
     background-color: #fff;
     padding: 10px 5px;
@@ -162,20 +161,17 @@
 
 .button {
     position: fixed;
+    top: 50px;
     left: 250px;
     overflow-x: auto;
     width: 100%;
     overflow-y: hidden;
     background-color: #fff;
     padding: 5px;
-    margin: 15px;
-    height: 60px;
-    
+    margin: 15px;  
 }
 
 .button button {
-    /* width: 50px; */
-    height: 25px;
     padding: 5px;
     border-radius: 8px;
     border: 1px;
@@ -187,38 +183,46 @@
     color: #fff;
 }
 
-.leftpicture img{
-    width: 600px;
-    height: 200px;
-    border-radius: 10px;
-}
-.rightpicture .showmaxad{
-    width: 440px;
-    height: 100px;
-    border-radius: 10px;
-}
-
-.rightpicture button, .watch{
-    position: relative;
-    bottom: 60px;
-    left: 80px;
-    line-height: 20px;
-}
-
 .main {
     display: flex;
-    margin-left: 250px;
-    margin-top: 20px;
+    position: relative;
+    left: 250px;
+    top: 20px;
     flex-wrap: wrap;
     overflow-x: hidden;
     padding: 10px;
-    
+    width: 80%;
 }
 
 .toptwo {
     display: flex;
     margin-left: 30px;
     gap: 10px;
+    width: 80%;
+}
+
+
+.leftpicture img {
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.rightpicture {
+    width: 40%;
+}
+
+.rightpicture .showmaxad {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.rightpicture button,
+.watch {
+    position: relative;
+    bottom: 60px;
+    left: 80px;
+    line-height: 20px;
 }
 
 .bottomthree {
@@ -253,7 +257,7 @@
     font-size: 11px;
 }
 
-.bottom1 {
+/* .bottom1 {
     
 }
 .bottom2 {
@@ -261,7 +265,7 @@
 }
 .bottom3 {
     
-}
+} */
 
 .channel{
     width: 40px;
@@ -285,4 +289,71 @@
     border-radius: 20px;
     padding: 5px;
     border: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 1000px){
+.button {
+        overflow-x: scroll;
+        width: 75%;
+        margin: 15px auto;
+    }
+
+
+    .button button {
+        margin: 6px;
+    }
+}
+
+@media(max-width: 750px){
+.sidebar{
+    display: none;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    left: -20px;
+    top: 200px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.toptwo{
+flex-flow: column wrap;
+}
+
+.leftpicture{
+    width: 100%;
+}
+
+.leftpicture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.rightpicture {
+    width: 100%;
+}
+
+.bottomthree {
+    flex-direction: column;
+    margin: auto;
+    gap: 50px;
+    width: 90%;
+}
+
+
+
+.vidInfo {
+    margin-top: -19px;
+    line-height: 19px;
+}
+
 }
